@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>SDIHS School Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #8A2BE2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav.topnav {
+            background-color: skyblue;
+            overflow: hidden;
+            display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+
+        nav.topnav a {
+            float: left;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav.topnav a:hover {
+            background-color: violet
+        }
+
+        /* CONTAINER */
+        .container {
+            display: flex;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 20%;
+            background-color: #DDA0DD;
+            padding: 30px;
+            height: 550px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .sidebar li:hover {
+            background-color: skyblue;
+        }
+
+        /* ARTICLE */
+        article {
+            padding: 30px;
+            width: 90%;
+            background-color: #DDA0DD;
+            height: 550px;
+        } 
+
+
+        /* FOOTER */
+        footer {
+            background-color: #9370DB;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            clear: both;
+        }
+     
+    </style>
+</head>
+
+<body> 
+  <body style=text-align: center; font-size:150px;">
+    <header>
+      <h1>SDIHS</h1>
+      <p>Barangay Santo Domingo,Santa Rosa City, Laguna<p>
+</header>
+
+
+<style>
+.sidebar li {
+    background-color: #DDA0DD;
+    color: black;
+    float: none;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DDA0DD;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: skyblue;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #DDA0DD;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: skyblue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+</head>
+<body>
+
+
+<ul>
+  <li><a href="gmm.html">Home</a></li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Activity</a>
+    <div class="dropdown-content">
+      <li onclick="showActivity(1)">Activity1</li>
+      <li onclick="showActivity(2)">Activity2</li>
+ <li><a href="3rdp.html">Assessment</a></li>
+ <li><a href="3rdp.html">Reference</a></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <a href="#">Bargola,Shella Mae</a>
+      <a href="#">Boter, Joyce Ann</a>
+      <a href="<https://www.facebook.com/cecille.reyesnulo>">Nulo, Sophia Mae</a>
+      <a href="#">Salazar, Judy Ann</a>
+      <a href="#">Simbajon, Rhea Mae</a>
+    </div>
+  </li>
+  </ul>
+ </style>
+   
+<div class="container">
+        <!-- SIDEBAR -->
+        <nav class="sidebar">
+            <ul>
+                <li onclick="showContent()">Content</li>
+                <li onclick="showSHS()">Objectives</li>
+                <li onclick="showJHS()">Legal basis</li>
+                <li onclick="showReference()">References</li>
+            </ul>
+        </nav>
+
+<!-- ARTICLE -->
+        <article id="content">
+            <h1>ICT PROGRAMING PROJECT</h1>
+            
+            
+        </article>
+    </div>
+
+
+    <footer>
+        <p>Fourth Year Students Batch 2025-2026</p>
+       </footer>
+    
+
+    <!-- JAVASCRIPT  -->
+    <script>
+function showActivity(1) {
+     {
+        document.getElementById("content").innerHTML = `
+            <h2>ACTIVITY 1: Game Logic Analysis</h2>
+            <p>
+            Students will analyze how the Rock Paper Scissors game works.
+            They will identify the winning and losing conditions and explain
+            how simple decision-making logic can be applied using
+            if-else statements in JavaScript.
+            </p>
+
+            <p>
+            <b>Task:</b> Write or explain the conditions where the player
+            wins, loses, or draws against the system.
+            </p>
+        `;
+    } 
+function showActivity(2){
+        document.getElementById("content").innerHTML = `
+            <h2>ACTIVITY 2: ICT Question Design</h2>
+            <p>
+            Students will create ICT-related questions that will appear
+            when the player loses in the Rock Paper Scissors game.
+            The questions may be multiple choice or identification.
+            </p>
+
+            <p>
+            <b>Task:</b> Create at least 5 ICT or coding questions that
+            can be used as part of the game-based reviewer.
+            </p>
+        `;
+
+        function showContent() {
+            document.getElementById("content").innerHTML = `
+ <h2>The title of this program is:ICT IS THE KEY</h2>
+<h1>Expected Output</h1>
+                <p>We are aiming to Students to learn and to know about the parts and functions of a Computer.</p>
+
+<h1>All about COMPUTER</h1>
+                
+<p>A computer is made up of different parts that work together. These include hardware (keyboard, mouse, CPU, monitor), software (programs and operating systems), and peopleware (users). Each part has a specific function that helps the computer process data and produce information
+and other more.</p>
+            `;
+        }
+
+
+        function showSHS() {
+            document.getElementById("content").innerHTML = `
+                <h1>Objectives</h1>
+<ul>
+<li>We will learn the parts of the computer:</li>
+    <li>The Functions of the computer</li>
+        <li>Fun Fact of computers</li>
+        <li>The History of the computers</li>
+    </ul>
+            `;
+        }
+
+        function showJHS() {
+            document.getElementById("content").innerHTML = `
+                <h1>Legal Basis</h1>
+                <p>This program is based on Electronic Commerce Act of 2000 (RA 8792)* - Provides a legal framework for electronic transactions, including contracts, digital signatures, and electronic documents.The use of computers is guided by laws and policies that promote responsible and ethical use of technology and this study is supported by Article XIV, Section 1 of the 1987 Philippine Constitution, which promotes quality education, and Republic Act No. 10533 (Enhanced Basic Education Act of 2013), which integrates ICT and computer education in schools. </p>
+            `;
+        }
+
+function showReference() {
+            document.getElementById("content").innerHTML = `
+                <h1>Reference</h1>
+                <p>Online educational resources about basic computer studies
+</p>
+<ul>
+<li>1987 Philippine Constitution
+Republic Act No. 10533 (Enhanced Basic Education Act of 2013)
+</li>
+    <li>Republic Act No. 10173 – Data Privacy Act of 2012
+</li>
+        <li>Computer Fundamentals textbooks</li>
+        <li>Department of Education (DepEd) ICT policies
+</li>
+    </ul>
+            `;
+        }
+    </script>
+
+</body>
+</html>
